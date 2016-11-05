@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navegar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Navegar" id="BYZ-38-t0r" customClass="ViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,16 +29,25 @@
                                 <rect key="frame" x="0.0" y="105" width="375" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-I3-iki">
-                                <rect key="frame" x="153" y="619" width="69" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="mza-i4-VmS" kind="presentation" id="qbz-4V-Ltk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPv-Nz-ePT">
                                 <rect key="frame" x="297" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="4Yo-Bb-3UD" kind="presentation" id="3tD-Ah-Dst"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-I3-iki">
+                                <rect key="frame" x="153" y="619" width="69" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Qal-1a-0yg" kind="presentation" id="xZx-kP-Yab"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="333.60000000000002" y="15.742128935532236"/>
         </scene>
-        <!--View Controller-->
+        <!--Música-->
         <scene sceneID="Hhu-qg-Tdy">
             <objects>
-                <viewController id="mza-i4-VmS" sceneMemberID="viewController">
+                <viewController title="Música" id="mza-i4-VmS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hr2-bR-C99"/>
                         <viewControllerLayoutGuide type="bottom" id="3r8-4b-k5P"/>
@@ -84,6 +93,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="102" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="kTl-q3-I2X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="23.838080959520241"/>
         </scene>
-        <!--View Controller-->
+        <!--Artistas-->
         <scene sceneID="uSl-ni-OPX">
             <objects>
-                <viewController id="Qal-1a-0yg" sceneMemberID="viewController">
+                <viewController title="Artistas" id="Qal-1a-0yg" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ySq-Mw-czq"/>
                         <viewControllerLayoutGuide type="bottom" id="vYB-2P-59z"/>
@@ -113,16 +125,25 @@
                                 <rect key="frame" x="12" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ubg-fg-fNj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x2-8G-QXp">
                                 <rect key="frame" x="290" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="4Yo-Bb-3UD" kind="presentation" id="Css-1w-EtM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-FC-4Yv">
                                 <rect key="frame" x="0.0" y="66" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="mza-i4-VmS" kind="presentation" id="SEd-t6-Hjy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1925.5999999999999" y="15.742128935532236"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlists-->
         <scene sceneID="NIu-A5-8GC">
             <objects>
-                <viewController id="4Yo-Bb-3UD" customClass="ViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Playlists" id="4Yo-Bb-3UD" customClass="ViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ReL-hK-9oN"/>
                         <viewControllerLayoutGuide type="bottom" id="pY4-dj-eJR"/>
@@ -152,21 +173,33 @@
                                 <rect key="frame" x="270" y="0.0" width="105" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="ZYg-sw-4cQ" kind="presentation" id="OrT-on-9ek"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk8-oF-xvV">
                                 <rect key="frame" x="14" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="lxI-wU-E26"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zty-NY-yAa">
                                 <rect key="frame" x="151" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Qal-1a-0yg" kind="presentation" id="Y2A-NK-McI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-D9-jZx">
                                 <rect key="frame" x="0.0" y="240" width="375" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="6fX-OS-4eH" kind="presentation" id="Q6t-C0-xN8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="333.60000000000002" y="720.08995502248877"/>
         </scene>
-        <!--View Controller-->
+        <!--Deletando Playlist-->
         <scene sceneID="fPx-ta-DoM">
             <objects>
-                <viewController id="6fX-OS-4eH" sceneMemberID="viewController">
+                <viewController title="Deletando Playlist" id="6fX-OS-4eH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hYl-mf-z3f"/>
                         <viewControllerLayoutGuide type="bottom" id="Cyh-ca-16s"/>
@@ -197,21 +230,33 @@
                                 <rect key="frame" x="272" y="0.0" width="105" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy0-du-42F">
-                                <rect key="frame" x="12" y="619" width="69" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="ZYg-sw-4cQ" kind="presentation" id="CCt-wX-gyv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-Ci-CkN">
                                 <rect key="frame" x="149" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Qal-1a-0yg" kind="presentation" id="1R0-vy-AKg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZF-MB-GaH">
                                 <rect key="frame" x="270" y="240" width="105" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="twN-Vy-u4Z" kind="presentation" id="0Bt-w6-LtF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy0-du-42F">
+                                <rect key="frame" x="16" y="619" width="69" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="IJc-lM-G38"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -221,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="719.19040479760122"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlist Deletada-->
         <scene sceneID="Av2-4P-DEa">
             <objects>
-                <viewController id="twN-Vy-u4Z" sceneMemberID="viewController">
+                <viewController title="Playlist Deletada" id="twN-Vy-u4Z" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ahQ-Y5-HOO"/>
                         <viewControllerLayoutGuide type="bottom" id="4HJ-aR-P98"/>
@@ -241,16 +286,25 @@
                                 <rect key="frame" x="14" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="EUG-Kv-q7e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-OP-Bks">
                                 <rect key="frame" x="151" y="619" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Qal-1a-0yg" kind="presentation" id="HHT-Lg-ZMw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-kq-mPq">
                                 <rect key="frame" x="270" y="0.0" width="105" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="ZYg-sw-4cQ" kind="presentation" id="KUe-kf-aFc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="1925.5999999999999" y="720.08995502248877"/>
         </scene>
-        <!--View Controller-->
+        <!--Adicionar Playlist-->
         <scene sceneID="tXa-87-Kim">
             <objects>
-                <viewController id="ZYg-sw-4cQ" sceneMemberID="viewController">
+                <viewController title="Adicionar Playlist" id="ZYg-sw-4cQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="41t-x0-HIp"/>
                         <viewControllerLayoutGuide type="bottom" id="DWu-Bb-YVj"/>
@@ -280,6 +334,9 @@
                                 <rect key="frame" x="205" y="371" width="105" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="4Yo-Bb-3UD" kind="presentation" id="Lfs-H8-dnD"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-e5-aDR">
                                 <rect key="frame" x="66" y="333" width="244" height="30"/>
@@ -292,6 +349,9 @@
                                 <rect key="frame" x="66" y="372" width="105" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="4Yo-Bb-3UD" kind="presentation" id="DF9-cZ-Qo3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -311,4 +371,11 @@
         <image name="4.1.1. Playlist deletada" width="750" height="1334"/>
         <image name="4.2. Adicionar Playlist" width="750" height="1334"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CCt-wX-gyv"/>
+        <segue reference="3tD-Ah-Dst"/>
+        <segue reference="IJc-lM-G38"/>
+        <segue reference="xZx-kP-Yab"/>
+        <segue reference="qbz-4V-Ltk"/>
+    </inferredMetricsTieBreakers>
 </document>
