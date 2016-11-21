@@ -59,7 +59,6 @@
                                                 <constraint firstAttribute="height" constant="60" id="Fe5-1U-2cD"/>
                                             </constraints>
                                             <state key="normal" image="ic_play"/>
-                                            <state key="selected" image="ic_pause"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-Pr-dUp">
                                             <rect key="frame" x="243" y="165" width="25" height="25"/>
@@ -150,48 +149,11 @@
             </objects>
             <point key="canvasLocation" x="-1535" y="-74"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aSJ-ze-9w5">
-            <objects>
-                <viewController id="r9L-9x-LcZ" customClass="ViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lVj-HJ-Hbd"/>
-                        <viewControllerLayoutGuide type="bottom" id="pD8-Bd-WG6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="482-1Q-0pw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-Od-1nB">
-                                <rect key="frame" x="0.0" y="35" width="9" height="18"/>
-                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="p7f-to-EW8"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fjh-Od-1nB" firstAttribute="leading" secondItem="482-1Q-0pw" secondAttribute="leading" id="9AD-IY-9Ny"/>
-                            <constraint firstItem="fjh-Od-1nB" firstAttribute="top" secondItem="lVj-HJ-Hbd" secondAttribute="bottom" constant="15" id="FSR-jT-A6U"/>
-                            <constraint firstAttribute="trailing" secondItem="fjh-Od-1nB" secondAttribute="trailing" constant="366" id="pEf-6z-0bp"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="segmentTrailingConstraint" destination="pEf-6z-0bp" id="czp-Ta-ItL"/>
-                        <outlet property="segmentView" destination="fjh-Od-1nB" id="yv1-t8-zsB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CmV-3g-EDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2321" y="-177"/>
-        </scene>
     </scenes>
     <resources>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>
-        <image name="ic_pause" width="140" height="140"/>
         <image name="ic_play" width="140" height="140"/>
         <image name="ic_preview" width="126" height="132"/>
         <image name="music_shadow" width="750" height="318"/>
