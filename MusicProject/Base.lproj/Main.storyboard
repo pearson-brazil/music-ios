@@ -149,6 +149,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="playButton" destination="TXV-bA-aZj" id="DL4-nn-8BR"/>
                         <outlet property="remaingTimeLabel" destination="cYa-Rm-k9n" id="YjS-ct-aWP"/>
                         <outlet property="totalPlayedLabel" destination="n8m-7u-vmX" id="29b-CC-2nb"/>
                     </connections>

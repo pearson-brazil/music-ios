@@ -13,6 +13,7 @@ class MusicViewController: UIViewController {
     // @IBOutlets
     @IBOutlet var totalPlayedLabel: UILabel!
     @IBOutlet var remaingTimeLabel: UILabel!
+    @IBOutlet var playButton: UIButton!
     
     // variáveis e constantes
     let musicDuration : TimeInterval = 180.0
@@ -46,6 +47,7 @@ class MusicViewController: UIViewController {
             remaingTime = musicDuration
             
             // Faça o botão voltar para a imagem #imageLiteral(resourceName: "ic_play") aqui
+            playButton.isSelected = false
             
         }else{
             // Diminui o tempo das variáveis
