@@ -38,7 +38,7 @@ class MusicViewController: UIViewController {
 
     func updateTime() {
         
-        if remaingTime == 0.0 {
+        if Int(remaingTime) == 0 {
             
             // Invalida o timer
             timer.invalidate()
