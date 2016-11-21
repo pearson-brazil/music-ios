@@ -10,11 +10,10 @@ import UIKit
 
 class MusicViewController: UIViewController {
     
-    // @IBOutlets
-    @IBOutlet var totalPlayedLabel: UILabel!
-    @IBOutlet var remaingTimeLabel: UILabel!
+    // 👇 Coloque os @IBOutlets abaixo 👇
+
     
-    // variáveis e constantes
+    // Variáveis e constantes
     let musicDuration : TimeInterval = 180.0
     var remaingTime : TimeInterval = 180.0
     var totalPlayed : TimeInterval = 0.0
@@ -45,7 +44,7 @@ class MusicViewController: UIViewController {
             totalPlayed = 0.0
             remaingTime = musicDuration
             
-            // Faça o botão voltar para a imagem #imageLiteral(resourceName: "ic_play") aqui
+            // Faça o botão voltar para a imagem #imageLiteral(resourceName: "ic_play") aqui 👇
             
         }else{
             // Diminui o tempo das variáveis
@@ -66,24 +65,12 @@ class MusicViewController: UIViewController {
         let remainingTimeString = formatter.string(from: Date(timeIntervalSinceReferenceDate: remaingTime))
         let totalPlayedString = formatter.string(from: Date(timeIntervalSinceReferenceDate: totalPlayed))
         
-        // Atualize as labels aqui
-        remaingTimeLabel.text = remainingTimeString
-        totalPlayedLabel.text = totalPlayedString
+        // 👇 Atualize as labels aqui 👇
+
         
     }
     
-    // Coloque os @IBActions abaixo
-    // MARK: IBActions
+    // 👇 Coloque os @IBActions abaixo 👇
 
-    @IBAction func playButtonTouchUpInside(sender: UIButton) {
-        if sender.isSelected {
-            pauseTimer()
-        }else{
-            resumeTimer()
-        }
-        
-        sender.isSelected = !sender.isSelected
-        
-    }
 }
 
