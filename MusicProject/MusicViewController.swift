@@ -14,6 +14,7 @@ class MusicViewController: UIViewController {
     @IBOutlet var totalPlayedLabel: UILabel!
     @IBOutlet var remaingTimeLabel: UILabel!
     @IBOutlet var playButton: UIButton!
+    @IBOutlet var slider: UISlider!
     
     // variáveis e constantes
     let musicDuration : TimeInterval = 180.0
@@ -55,6 +56,8 @@ class MusicViewController: UIViewController {
             totalPlayed += 1
         }
         
+        slider.value = Float(totalPlayed)
+        
         updateLabels()
     }
     
@@ -86,6 +89,13 @@ class MusicViewController: UIViewController {
         
         sender.isSelected = !sender.isSelected
         
+    }
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        totalPlayed = Double(sender.value)
+        remaingTime = musicDuration - totalPlayed
+        
+        updateLabels()
     }
 }
 

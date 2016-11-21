@@ -120,9 +120,12 @@
                                 </constraints>
                                 <state key="normal" image="ic_back"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
                                 <rect key="frame" x="-2" y="380" width="379" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChangedWithSender:" destination="b6X-LW-ndH" eventType="valueChanged" id="zdY-mI-n7E"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -151,6 +154,7 @@
                     <connections>
                         <outlet property="playButton" destination="TXV-bA-aZj" id="DL4-nn-8BR"/>
                         <outlet property="remaingTimeLabel" destination="cYa-Rm-k9n" id="YjS-ct-aWP"/>
+                        <outlet property="slider" destination="Pdy-vG-kFi" id="tQe-Zn-4Ho"/>
                         <outlet property="totalPlayedLabel" destination="n8m-7u-vmX" id="29b-CC-2nb"/>
                     </connections>
                 </viewController>
