@@ -60,6 +60,9 @@
                                             </constraints>
                                             <state key="normal" image="ic_play"/>
                                             <state key="selected" image="ic_pause"/>
+                                            <connections>
+                                                <action selector="playButtonTouchUpInside:" destination="b6X-LW-ndH" eventType="touchUpInside" id="Dem-AO-iBt"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-Pr-dUp">
                                             <rect key="frame" x="243" y="165" width="25" height="25"/>
@@ -117,9 +120,12 @@
                                 </constraints>
                                 <state key="normal" image="ic_back"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
                                 <rect key="frame" x="-2" y="380" width="379" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="b6X-LW-ndH" eventType="valueChanged" id="Cmf-lQ-nKD"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -145,6 +151,12 @@
                             <constraint firstAttribute="trailing" secondItem="CYD-Fh-b7G" secondAttribute="trailing" id="zoQ-zQ-pt5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="TXV-bA-aZj" id="yfO-b7-hEu"/>
+                        <outlet property="remainingTimeLabel" destination="cYa-Rm-k9n" id="Ugm-QL-mRw"/>
+                        <outlet property="slider" destination="Pdy-vG-kFi" id="c4k-5h-ejd"/>
+                        <outlet property="totalPlayedLabel" destination="n8m-7u-vmX" id="Xdn-nf-WT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKN-6J-KvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

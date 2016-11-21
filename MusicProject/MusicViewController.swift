@@ -11,6 +11,10 @@ import UIKit
 class MusicViewController: UIViewController {
     
     // 👇 Coloque os @IBOutlets abaixo 👇
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var totalPlayedLabel: UILabel!
+    @IBOutlet weak var remainingTimeLabel: UILabel!
 
     
     // Variáveis e constantes
@@ -45,6 +49,7 @@ class MusicViewController: UIViewController {
             remaingTime = musicDuration
             
             // Faça o botão voltar para a imagem #imageLiteral(resourceName: "ic_play") aqui 👇
+            playButton.isSelected = !playButton.isSelected
             
         }else{
             // Diminui o tempo das variáveis
@@ -66,11 +71,30 @@ class MusicViewController: UIViewController {
         let totalPlayedString = formatter.string(from: Date(timeIntervalSinceReferenceDate: totalPlayed))
         
         // 👇 Atualize as labels aqui 👇
-
+        remainingTimeLabel.text = remainingTimeString
+        totalPlayedLabel.text = totalPlayedString
+        
+        slider.value = Float(totalPlayed)
         
     }
     
     // 👇 Coloque os @IBActions abaixo 👇
+    @IBAction func playButtonTouchUpInside(_ sender: UIButton) {
+        
+        if sender.isSelected {
+            pauseTimer()
+        }else{
+            resumeTimer()
+        }
+        
+        sender.isSelected = !sender.isSelected
+    }
 
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        totalPlayed = TimeInterval(sender.value)
+        remaingTime = musicDuration - totalPlayed
+        
+        updateLabels()
+    }
 }
 
