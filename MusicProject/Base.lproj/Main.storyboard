@@ -59,6 +59,7 @@
                                                 <constraint firstAttribute="height" constant="60" id="Fe5-1U-2cD"/>
                                             </constraints>
                                             <state key="normal" image="ic_play"/>
+                                            <state key="selected" image="ic_pause"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-Pr-dUp">
                                             <rect key="frame" x="243" y="165" width="25" height="25"/>
@@ -147,13 +148,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKN-6J-KvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1535" y="-74"/>
+            <point key="canvasLocation" x="-2054" y="-89"/>
         </scene>
     </scenes>
     <resources>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>
+        <image name="ic_pause" width="140" height="140"/>
         <image name="ic_play" width="140" height="140"/>
         <image name="ic_preview" width="126" height="132"/>
         <image name="music_shadow" width="750" height="318"/>
