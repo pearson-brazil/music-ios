@@ -10,7 +10,6 @@ import UIKit
 
 class MusicViewController: UIViewController {
     
-    // 👇 Coloque os @IBOutlets abaixo 👇
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var totalPlayedLabel: UILabel!
@@ -48,7 +47,6 @@ class MusicViewController: UIViewController {
             totalPlayed = 0.0
             remaingTime = musicDuration
             
-            // Faça o botão voltar para a imagem #imageLiteral(resourceName: "ic_play") aqui 👇
             playButton.isSelected = !playButton.isSelected
             
         }else{
@@ -70,7 +68,6 @@ class MusicViewController: UIViewController {
         let remainingTimeString = formatter.string(from: Date(timeIntervalSinceReferenceDate: remaingTime))
         let totalPlayedString = formatter.string(from: Date(timeIntervalSinceReferenceDate: totalPlayed))
         
-        // 👇 Atualize as labels aqui 👇
         remainingTimeLabel.text = remainingTimeString
         totalPlayedLabel.text = totalPlayedString
         
@@ -78,7 +75,6 @@ class MusicViewController: UIViewController {
         
     }
     
-    // 👇 Coloque os @IBActions abaixo 👇
     @IBAction func playButtonTouchUpInside(_ sender: UIButton) {
         
         if sender.isSelected {
