@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b6X-LW-ndH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yol-Q6-KWL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="pzQ-Eb-hLD">
+            <objects>
+                <viewController id="Bli-7c-Iqa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Zm-hy-gYW"/>
+                        <viewControllerLayoutGuide type="bottom" id="lRH-hI-Qeb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EiE-aj-Xbn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4. Playlists 2" translatesAutoresizingMaskIntoConstraints="NO" id="9wg-Yx-VBl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="top" secondItem="EiE-aj-Xbn" secondAttribute="top" id="6Ue-8b-hEQ"/>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="leading" secondItem="EiE-aj-Xbn" secondAttribute="leading" id="9Ud-Aj-Ikj"/>
+                            <constraint firstAttribute="trailing" secondItem="9wg-Yx-VBl" secondAttribute="trailing" id="YK4-Ir-HiS"/>
+                            <constraint firstItem="lRH-hI-Qeb" firstAttribute="top" secondItem="9wg-Yx-VBl" secondAttribute="bottom" id="x51-Nd-zju"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFo-vi-Z7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044" y="-126.38680659670166"/>
+        </scene>
         <!--Música-->
         <scene sceneID="IX9-pN-Jxl">
             <objects>
@@ -119,6 +148,9 @@
                                     <constraint firstAttribute="height" constant="20" id="vdx-Vh-iBC"/>
                                 </constraints>
                                 <state key="normal" image="ic_back"/>
+                                <connections>
+                                    <action selector="backButtonTouchUpInside:" destination="b6X-LW-ndH" eventType="touchUpInside" id="Y8m-gw-GmU"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
                                 <rect key="frame" x="-2" y="380" width="379" height="31"/>
@@ -151,6 +183,7 @@
                             <constraint firstAttribute="trailing" secondItem="CYD-Fh-b7G" secondAttribute="trailing" id="zoQ-zQ-pt5"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="playButton" destination="TXV-bA-aZj" id="yfO-b7-hEu"/>
                         <outlet property="remainingTimeLabel" destination="cYa-Rm-k9n" id="Ugm-QL-mRw"/>
@@ -160,10 +193,102 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKN-6J-KvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2054" y="-89"/>
+            <point key="canvasLocation" x="848.79999999999995" y="-126.38680659670166"/>
+        </scene>
+        <!--Navegar-->
+        <scene sceneID="AlT-iC-qY2">
+            <objects>
+                <viewController title="Navegar" id="7yj-Bk-cqJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="taY-8t-dKv"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xO-Bw-T1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eu5-S2-fLe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1. Navegar 2" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-gH-4ep">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-lr-gDx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Tqb-68-Lei"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="b6X-LW-ndH" kind="show" id="KLt-Se-L3g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Icc-lr-gDx" firstAttribute="top" secondItem="taY-8t-dKv" secondAttribute="bottom" id="03E-8Y-c3g"/>
+                            <constraint firstItem="aPy-gH-4ep" firstAttribute="top" secondItem="taY-8t-dKv" secondAttribute="bottom" id="3LM-Qk-PdA"/>
+                            <constraint firstItem="aPy-gH-4ep" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="8i1-GM-JYM"/>
+                            <constraint firstAttribute="trailing" secondItem="aPy-gH-4ep" secondAttribute="trailing" id="Zpk-6I-cBC"/>
+                            <constraint firstAttribute="trailing" secondItem="Icc-lr-gDx" secondAttribute="trailing" id="dpX-2C-g6z"/>
+                            <constraint firstItem="5xO-Bw-T1s" firstAttribute="top" secondItem="aPy-gH-4ep" secondAttribute="bottom" id="jUN-ui-sxX"/>
+                            <constraint firstItem="Icc-lr-gDx" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="yf0-sR-Ra2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Navegar" id="8nd-lo-EKT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaO-q7-5M8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="-126.38680659670166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VMc-y8-nTc">
+            <objects>
+                <viewController id="7hz-HC-NL8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyF-Nf-geb"/>
+                        <viewControllerLayoutGuide type="bottom" id="VDX-gD-LVC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uKH-2J-DdN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3. Artistas 2" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-j6-7Nr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="leading" secondItem="uKH-2J-DdN" secondAttribute="leading" id="PMG-u3-zQX"/>
+                            <constraint firstAttribute="trailing" secondItem="jMN-j6-7Nr" secondAttribute="trailing" id="TwR-sI-iyp"/>
+                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="top" secondItem="uKH-2J-DdN" secondAttribute="top" id="ZxV-Cv-rmF"/>
+                            <constraint firstItem="VDX-gD-LVC" firstAttribute="top" secondItem="jMN-j6-7Nr" secondAttribute="bottom" id="saD-Lf-oJ1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnY-f7-pzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724" y="-126.38680659670166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JxQ-Xw-36w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yol-Q6-KWL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Wk-8K-0If">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7yj-Bk-cqJ" kind="relationship" relationship="rootViewController" id="3GF-Qv-jiA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fae-Mb-ddc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-879.20000000000005" y="-126.38680659670166"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1. Navegar 2" width="750" height="1334"/>
+        <image name="3. Artistas 2" width="750" height="1334"/>
+        <image name="4. Playlists 2" width="750" height="1334"/>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>

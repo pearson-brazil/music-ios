@@ -23,6 +23,18 @@ class MusicViewController: UIViewController {
     
     var timer: Timer! = nil
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.navigationBar.isHidden = false
+    }
+    
     func resumeTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1,
                                      target: self,
@@ -91,6 +103,10 @@ class MusicViewController: UIViewController {
         remaingTime = musicDuration - totalPlayed
         
         updateLabels()
+    }
+    
+    @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
+        _ = navigationController?.popViewController(animated: true)
     }
 }
 
