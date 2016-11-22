@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yol-Q6-KWL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="05r-BY-pZL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlists-->
         <scene sceneID="pzQ-Eb-hLD">
             <objects>
                 <viewController id="Bli-7c-Iqa" sceneMemberID="viewController">
@@ -22,22 +22,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4. Playlists 2" translatesAutoresizingMaskIntoConstraints="NO" id="9wg-Yx-VBl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4. Playlists 2" translatesAutoresizingMaskIntoConstraints="NO" id="9wg-Yx-VBl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="top" secondItem="EiE-aj-Xbn" secondAttribute="top" id="6Ue-8b-hEQ"/>
-                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="leading" secondItem="EiE-aj-Xbn" secondAttribute="leading" id="9Ud-Aj-Ikj"/>
-                            <constraint firstAttribute="trailing" secondItem="9wg-Yx-VBl" secondAttribute="trailing" id="YK4-Ir-HiS"/>
-                            <constraint firstItem="lRH-hI-Qeb" firstAttribute="top" secondItem="9wg-Yx-VBl" secondAttribute="bottom" id="x51-Nd-zju"/>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="top" secondItem="3Zm-hy-gYW" secondAttribute="bottom" id="1QY-BN-ell"/>
+                            <constraint firstAttribute="bottom" secondItem="9wg-Yx-VBl" secondAttribute="bottom" id="DUk-kM-ADE"/>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="leading" secondItem="EiE-aj-Xbn" secondAttribute="leading" id="Eyb-Yq-TM7"/>
+                            <constraint firstAttribute="trailing" secondItem="9wg-Yx-VBl" secondAttribute="trailing" id="G7E-0X-9Qp"/>
+                            <constraint firstAttribute="trailing" secondItem="9wg-Yx-VBl" secondAttribute="trailing" id="NTX-5y-CBB"/>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="leading" secondItem="EiE-aj-Xbn" secondAttribute="leading" id="Qib-O8-8KJ"/>
+                            <constraint firstItem="9wg-Yx-VBl" firstAttribute="top" secondItem="3Zm-hy-gYW" secondAttribute="bottom" id="wKR-V9-CwN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="1EZ-w2-a7A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFo-vi-Z7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="2522" y="-126"/>
         </scene>
         <!--Música-->
         <scene sceneID="IX9-pN-Jxl">
@@ -53,6 +57,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doo_wacka_doo_poster" translatesAutoresizingMaskIntoConstraints="NO" id="CYD-Fh-b7G">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="395"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doo_wacka_doo_poster" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-i1-UQy" userLabel="back_image">
                                 <rect key="frame" x="0.0" y="395" width="375" height="272"/>
@@ -193,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKN-6J-KvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="953" y="609"/>
         </scene>
         <!--Navegar-->
         <scene sceneID="AlT-iC-qY2">
@@ -216,7 +223,7 @@
                                     <constraint firstAttribute="height" constant="75" id="Tqb-68-Lei"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="b6X-LW-ndH" kind="show" id="KLt-Se-L3g"/>
+                                    <segue destination="b6X-LW-ndH" kind="presentation" id="KLt-Se-L3g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -227,7 +234,7 @@
                             <constraint firstItem="aPy-gH-4ep" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="8i1-GM-JYM"/>
                             <constraint firstAttribute="trailing" secondItem="aPy-gH-4ep" secondAttribute="trailing" id="Zpk-6I-cBC"/>
                             <constraint firstAttribute="trailing" secondItem="Icc-lr-gDx" secondAttribute="trailing" id="dpX-2C-g6z"/>
-                            <constraint firstItem="5xO-Bw-T1s" firstAttribute="top" secondItem="aPy-gH-4ep" secondAttribute="bottom" id="jUN-ui-sxX"/>
+                            <constraint firstItem="5xO-Bw-T1s" firstAttribute="top" secondItem="aPy-gH-4ep" secondAttribute="bottom" constant="-49" id="jUN-ui-sxX"/>
                             <constraint firstItem="Icc-lr-gDx" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="yf0-sR-Ra2"/>
                         </constraints>
                     </view>
@@ -235,9 +242,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaO-q7-5M8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.6" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="952.79999999999995" y="-126.38680659670166"/>
         </scene>
-        <!--View Controller-->
+        <!--Artistas-->
         <scene sceneID="VMc-y8-nTc">
             <objects>
                 <viewController id="7hz-HC-NL8" sceneMemberID="viewController">
@@ -249,52 +256,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3. Artistas 2" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-j6-7Nr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3. Artistas 2" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-j6-7Nr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="leading" secondItem="uKH-2J-DdN" secondAttribute="leading" id="PMG-u3-zQX"/>
-                            <constraint firstAttribute="trailing" secondItem="jMN-j6-7Nr" secondAttribute="trailing" id="TwR-sI-iyp"/>
-                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="top" secondItem="uKH-2J-DdN" secondAttribute="top" id="ZxV-Cv-rmF"/>
-                            <constraint firstItem="VDX-gD-LVC" firstAttribute="top" secondItem="jMN-j6-7Nr" secondAttribute="bottom" id="saD-Lf-oJ1"/>
+                            <constraint firstAttribute="bottom" secondItem="jMN-j6-7Nr" secondAttribute="bottom" id="4fH-Az-qLx"/>
+                            <constraint firstAttribute="trailing" secondItem="jMN-j6-7Nr" secondAttribute="trailing" id="Fyt-FM-AMA"/>
+                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="leading" secondItem="uKH-2J-DdN" secondAttribute="leading" id="ajp-9l-sMl"/>
+                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="top" secondItem="hyF-Nf-geb" secondAttribute="bottom" id="vxS-MM-G5J"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Artistas" id="btq-gI-ccH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnY-f7-pzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2724" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="1762" y="-126"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JxQ-Xw-36w">
+        <!--Main View Controller-->
+        <scene sceneID="F4B-vU-G9M">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yol-Q6-KWL" sceneMemberID="viewController">
+                <tabBarController id="05r-BY-pZL" customClass="MainViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9Z3-RM-MSI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="155-90-Vc3" kind="relationship" relationship="viewControllers" id="hix-IP-Tlz"/>
+                        <segue destination="grl-Gg-khW" kind="relationship" relationship="viewControllers" id="FZ8-31-WXs"/>
+                        <segue destination="uQJ-iQ-pcl" kind="relationship" relationship="viewControllers" id="W6m-bG-h81"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsF-Ex-Tqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-1867"/>
+        </scene>
+        <!--Navegar-->
+        <scene sceneID="oTT-RD-3xG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="155-90-Vc3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Navegar" image="search" id="QLq-Wc-7eM"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Wk-8K-0If">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1E6-TL-3Db">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7yj-Bk-cqJ" kind="relationship" relationship="rootViewController" id="3GF-Qv-jiA"/>
+                        <segue destination="7yj-Bk-cqJ" kind="relationship" relationship="rootViewController" id="qFQ-dS-QbH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fae-Mb-ddc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmh-Br-jB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-879.20000000000005" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="953" y="-941"/>
+        </scene>
+        <!--Playlists-->
+        <scene sceneID="n49-I9-bAY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQJ-iQ-pcl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Playlists" image="music" id="5U9-v3-Hsl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rN9-Uu-dzo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bli-7c-Iqa" kind="relationship" relationship="rootViewController" id="yZP-Fb-K00"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcb-X9-nwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="-941"/>
+        </scene>
+        <!--Artistas-->
+        <scene sceneID="wFR-tN-WBp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="grl-Gg-khW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artistas" image="artist" id="JLW-Yj-Zkw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oIu-EC-HUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7hz-HC-NL8" kind="relationship" relationship="rootViewController" id="jvz-bv-80H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPc-UW-e0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="-941"/>
         </scene>
     </scenes>
     <resources>
         <image name="1. Navegar 2" width="750" height="1334"/>
         <image name="3. Artistas 2" width="750" height="1334"/>
         <image name="4. Playlists 2" width="750" height="1334"/>
+        <image name="artist" width="25" height="25"/>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>
         <image name="ic_pause" width="140" height="140"/>
         <image name="ic_play" width="140" height="140"/>
         <image name="ic_preview" width="126" height="132"/>
+        <image name="music" width="18" height="20"/>
         <image name="music_shadow" width="750" height="318"/>
+        <image name="search" width="21" height="21"/>
     </resources>
 </document>

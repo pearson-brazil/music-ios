@@ -106,7 +106,7 @@ class MusicViewController: UIViewController {
     }
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
-        _ = navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 }
 
