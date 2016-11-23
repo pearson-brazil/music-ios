@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="05r-BY-pZL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -200,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKN-6J-KvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="609"/>
+            <point key="canvasLocation" x="1761" y="627"/>
         </scene>
         <!--Navegar-->
         <scene sceneID="AlT-iC-qY2">
@@ -274,26 +274,6 @@
             </objects>
             <point key="canvasLocation" x="1762" y="-126"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="F4B-vU-G9M">
-            <objects>
-                <tabBarController id="05r-BY-pZL" customClass="MainViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="9Z3-RM-MSI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="155-90-Vc3" kind="relationship" relationship="viewControllers" id="hix-IP-Tlz"/>
-                        <segue destination="grl-Gg-khW" kind="relationship" relationship="viewControllers" id="FZ8-31-WXs"/>
-                        <segue destination="uQJ-iQ-pcl" kind="relationship" relationship="viewControllers" id="W6m-bG-h81"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GsF-Ex-Tqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1790" y="-1867"/>
-        </scene>
         <!--Navegar-->
         <scene sceneID="oTT-RD-3xG">
             <objects>
@@ -311,7 +291,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fmh-Br-jB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="-941"/>
+            <point key="canvasLocation" x="953" y="-851"/>
         </scene>
         <!--Playlists-->
         <scene sceneID="n49-I9-bAY">
@@ -330,7 +310,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcb-X9-nwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521" y="-941"/>
+            <point key="canvasLocation" x="2521" y="-851"/>
         </scene>
         <!--Artistas-->
         <scene sceneID="wFR-tN-WBp">
@@ -349,7 +329,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPc-UW-e0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762" y="-941"/>
+            <point key="canvasLocation" x="1761" y="-851"/>
         </scene>
     </scenes>
     <resources>
