@@ -13,6 +13,7 @@
 		79E969B01DCE1E8300C67B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E969AE1DCE1E8300C67B8F /* Main.storyboard */; };
 		79E969B21DCE1E8300C67B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E969B11DCE1E8300C67B8F /* Assets.xcassets */; };
 		79E969B51DCE1E8300C67B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E969B31DCE1E8300C67B8F /* LaunchScreen.storyboard */; };
+		79F795191DE5476200C349D0 /* BrowseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F795181DE5476200C349D0 /* BrowseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		79E969B11DCE1E8300C67B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E969B41DCE1E8300C67B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79E969B61DCE1E8300C67B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F795181DE5476200C349D0 /* BrowseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				79E969B31DCE1E8300C67B8F /* LaunchScreen.storyboard */,
 				79E969B61DCE1E8300C67B8F /* Info.plist */,
 				79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */,
+				79F795181DE5476200C349D0 /* BrowseTableViewController.swift */,
 			);
 			path = MusicProject;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */,
 				79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */,
 				79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */,
+				79F795191DE5476200C349D0 /* BrowseTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
