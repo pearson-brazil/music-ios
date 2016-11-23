@@ -247,7 +247,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Navegar" id="10c-gK-6NF"/>
                     <connections>
-                        <segue destination="b6X-LW-ndH" kind="presentation" id="Dzr-HW-8Nt"/>
+                        <segue destination="b6X-LW-ndH" kind="presentation" identifier="MusicViewControllerIdentifier" id="Dzr-HW-8Nt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5q-kt-XqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,7 +308,7 @@
         <scene sceneID="oTT-RD-3xG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="155-90-Vc3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Navegar" image="search" id="QLq-Wc-7eM"/>
+                    <tabBarItem key="tabBarItem" title="Navegar" image="ic_search" id="QLq-Wc-7eM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1E6-TL-3Db">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -327,7 +327,7 @@
         <scene sceneID="n49-I9-bAY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQJ-iQ-pcl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Playlists" image="music" id="5U9-v3-Hsl"/>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="ic_music" id="5U9-v3-Hsl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rN9-Uu-dzo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -346,7 +346,7 @@
         <scene sceneID="wFR-tN-WBp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="grl-Gg-khW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artistas" image="artist" id="JLW-Yj-Zkw"/>
+                    <tabBarItem key="tabBarItem" title="Artistas" image="ic_artist" id="JLW-Yj-Zkw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oIu-EC-HUe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -365,16 +365,16 @@
     <resources>
         <image name="3. Artistas 2" width="750" height="1334"/>
         <image name="4. Playlists 2" width="750" height="1334"/>
-        <image name="artist" width="25" height="25"/>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
+        <image name="ic_artist" width="25" height="25"/>
         <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>
+        <image name="ic_music" width="18" height="20"/>
         <image name="ic_pause" width="140" height="140"/>
         <image name="ic_play" width="140" height="140"/>
         <image name="ic_preview" width="126" height="132"/>
-        <image name="music" width="18" height="20"/>
+        <image name="ic_search" width="21" height="21"/>
         <image name="music_shadow" width="750" height="318"/>
-        <image name="search" width="21" height="21"/>
         <image name="thumb" width="43" height="43"/>
     </resources>
 </document>
