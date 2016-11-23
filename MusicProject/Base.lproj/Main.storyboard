@@ -203,46 +203,56 @@
             <point key="canvasLocation" x="953" y="609"/>
         </scene>
         <!--Navegar-->
-        <scene sceneID="AlT-iC-qY2">
+        <scene sceneID="9L5-w6-bOF">
             <objects>
-                <viewController title="Navegar" id="7yj-Bk-cqJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="taY-8t-dKv"/>
-                        <viewControllerLayoutGuide type="bottom" id="5xO-Bw-T1s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eu5-S2-fLe">
+                <tableViewController id="UyE-tG-EgC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GLS-IW-VCX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1. Navegar 2" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-gH-4ep">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-lr-gDx">
-                                <rect key="frame" x="0.0" y="64" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Tqb-68-Lei"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="b6X-LW-ndH" kind="presentation" id="KLt-Se-L3g"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Icc-lr-gDx" firstAttribute="top" secondItem="taY-8t-dKv" secondAttribute="bottom" id="03E-8Y-c3g"/>
-                            <constraint firstItem="aPy-gH-4ep" firstAttribute="top" secondItem="taY-8t-dKv" secondAttribute="bottom" id="3LM-Qk-PdA"/>
-                            <constraint firstItem="aPy-gH-4ep" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="8i1-GM-JYM"/>
-                            <constraint firstAttribute="trailing" secondItem="aPy-gH-4ep" secondAttribute="trailing" id="Zpk-6I-cBC"/>
-                            <constraint firstAttribute="trailing" secondItem="Icc-lr-gDx" secondAttribute="trailing" id="dpX-2C-g6z"/>
-                            <constraint firstItem="5xO-Bw-T1s" firstAttribute="top" secondItem="aPy-gH-4ep" secondAttribute="bottom" constant="-49" id="jUN-ui-sxX"/>
-                            <constraint firstItem="Icc-lr-gDx" firstAttribute="leading" secondItem="eu5-S2-fLe" secondAttribute="leading" id="yf0-sR-Ra2"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Navegar" id="8nd-lo-EKT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JaO-q7-5M8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="r0a-vG-uEK" detailTextLabel="2a6-Rw-OPQ" imageView="fN6-Fj-yjv" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="LNR-Me-IgG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNR-Me-IgG" id="mUU-7g-ZU0">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Artista 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r0a-vG-uEK">
+                                            <rect key="frame" x="73" y="14" width="47" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Música 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2a6-Rw-OPQ">
+                                            <rect key="frame" x="73" y="29" width="67" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="thumb" id="fN6-Fj-yjv">
+                                            <rect key="frame" x="15" y="10" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="UyE-tG-EgC" id="his-vP-2Ee"/>
+                            <outlet property="delegate" destination="UyE-tG-EgC" id="Y0Y-XW-f7I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Navegar" id="10c-gK-6NF"/>
+                    <connections>
+                        <segue destination="b6X-LW-ndH" kind="presentation" id="Dzr-HW-8Nt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5q-kt-XqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="953" y="-126"/>
         </scene>
         <!--Artistas-->
         <scene sceneID="VMc-y8-nTc">
@@ -306,7 +316,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7yj-Bk-cqJ" kind="relationship" relationship="rootViewController" id="qFQ-dS-QbH"/>
+                        <segue destination="UyE-tG-EgC" kind="relationship" relationship="rootViewController" id="waE-cZ-JlD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fmh-Br-jB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,7 +363,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1. Navegar 2" width="750" height="1334"/>
         <image name="3. Artistas 2" width="750" height="1334"/>
         <image name="4. Playlists 2" width="750" height="1334"/>
         <image name="artist" width="25" height="25"/>
@@ -366,5 +375,6 @@
         <image name="music" width="18" height="20"/>
         <image name="music_shadow" width="750" height="318"/>
         <image name="search" width="21" height="21"/>
+        <image name="thumb" width="43" height="43"/>
     </resources>
 </document>
