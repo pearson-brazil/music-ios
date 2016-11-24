@@ -206,13 +206,13 @@
         <scene sceneID="9L5-w6-bOF">
             <objects>
                 <tableViewController id="UyE-tG-EgC" customClass="BrowseTableViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GLS-IW-VCX">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="GLS-IW-VCX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="r0a-vG-uEK" detailTextLabel="2a6-Rw-OPQ" imageView="fN6-Fj-yjv" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="LNR-Me-IgG">
-                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="UITableViewCellIdentifier" textLabel="r0a-vG-uEK" detailTextLabel="2a6-Rw-OPQ" imageView="fN6-Fj-yjv" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="LNR-Me-IgG">
+                                <rect key="frame" x="0.0" y="56" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNR-Me-IgG" id="mUU-7g-ZU0">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="64"/>

@@ -45,16 +45,19 @@ class BrowseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return items.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return items[section].musics.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCellIdentifier", for: indexPath)
+        
+        cell.textLabel?.text = items[indexPath.section].musics[indexPath.row].artist
+        cell.detailTextLabel?.text = items[indexPath.section].musics[indexPath.row].name
 
         return cell
     }
@@ -68,7 +71,7 @@ class BrowseTableViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: "MusicViewControllerIdentifier", sender: self)
     }
 
 }
