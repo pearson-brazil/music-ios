@@ -339,7 +339,7 @@
         <!--Artistas-->
         <scene sceneID="VMc-y8-nTc">
             <objects>
-                <viewController id="7hz-HC-NL8" customClass="ArtistViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7hz-HC-NL8" customClass="ArtistViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyF-Nf-geb"/>
                         <viewControllerLayoutGuide type="bottom" id="VDX-gD-LVC"/>
@@ -348,16 +348,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3. Artistas 2" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-j6-7Nr">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-Mv-OMc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UITableViewCellIdentifier" textLabel="bWh-rW-DFH" imageView="g8T-aH-2F7" rowHeight="70" style="IBUITableViewCellStyleDefault" id="fAF-Df-Xna">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fAF-Df-Xna" id="gdq-P9-UT7">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bWh-rW-DFH">
+                                                    <rect key="frame" x="73" y="0.0" width="267" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="artist_thumb" id="g8T-aH-2F7">
+                                                    <rect key="frame" x="15" y="13" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7hz-HC-NL8" id="QFq-jS-bDz"/>
+                                    <outlet property="delegate" destination="7hz-HC-NL8" id="dyp-aH-NAt"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="jMN-j6-7Nr" secondAttribute="bottom" id="4fH-Az-qLx"/>
-                            <constraint firstAttribute="trailing" secondItem="jMN-j6-7Nr" secondAttribute="trailing" id="Fyt-FM-AMA"/>
-                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="leading" secondItem="uKH-2J-DdN" secondAttribute="leading" id="ajp-9l-sMl"/>
-                            <constraint firstItem="jMN-j6-7Nr" firstAttribute="top" secondItem="hyF-Nf-geb" secondAttribute="bottom" id="vxS-MM-G5J"/>
+                            <constraint firstItem="Dhk-Mv-OMc" firstAttribute="top" secondItem="hyF-Nf-geb" secondAttribute="bottom" id="8J9-Ze-xdd"/>
+                            <constraint firstAttribute="trailing" secondItem="Dhk-Mv-OMc" secondAttribute="trailing" id="efe-wd-0ik"/>
+                            <constraint firstItem="Dhk-Mv-OMc" firstAttribute="leading" secondItem="uKH-2J-DdN" secondAttribute="leading" id="etx-m8-Ld2"/>
+                            <constraint firstItem="VDX-gD-LVC" firstAttribute="top" secondItem="Dhk-Mv-OMc" secondAttribute="bottom" id="vGg-Hs-NO4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artistas" id="btq-gI-ccH"/>
@@ -445,8 +473,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3. Artistas 2" width="750" height="1334"/>
         <image name="4. Playlists 2" width="750" height="1334"/>
+        <image name="artist_thumb" width="43" height="43"/>
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="ic_artist" width="25" height="25"/>
         <image name="ic_back" width="125" height="42"/>
