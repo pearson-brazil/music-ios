@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */; };
 		794FCFB61DEAFD5B004A0459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */; };
+		79B40F261DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */; };
+		79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F211DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m */; };
+		79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F231DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m */; };
+		79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F251DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		79B40F2B1DEB9F1E00633EC6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */; };
 		79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */; };
 		79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E969AA1DCE1E8300C67B8F /* AppDelegate.swift */; };
 		79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */; };
@@ -23,6 +28,16 @@
 		2FADEE8C029DB50C8C5BDB96 /* Pods-MusicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicProject/Pods-MusicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		79B40F1D1DEB9DA600633EC6 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		79B40F1E1DEB9DB100633EC6 /* MusicProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		79B40F201DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		79B40F211DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		79B40F221DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		79B40F231DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		79B40F241DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		79B40F251DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79E969A71DCE1E8300C67B8F /* MusicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E969AA1DCE1E8300C67B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +72,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		79B40F0F1DEB9D6C00633EC6 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				79B40F1D1DEB9DA600633EC6 /* TPKeyboardAvoidingCollectionView.h */,
+				79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */,
+				79B40F201DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.h */,
+				79B40F211DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m */,
+				79B40F221DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.h */,
+				79B40F231DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m */,
+				79B40F241DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				79B40F251DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				79B40F1E1DEB9DB100633EC6 /* MusicProject-Bridging-Header.h */,
+			);
+			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 		79E9699E1DCE1E8300C67B8F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +119,7 @@
 				79F795181DE5476200C349D0 /* BrowseViewController.swift */,
 				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
 				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
+				79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */,
 			);
 			path = MusicProject;
 			sourceTree = "<group>";
@@ -95,6 +127,7 @@
 		B2CA56E29C869886E7387E36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79B40F0F1DEB9D6C00633EC6 /* TPKeyboardAvoiding */,
 				FAE7243F211BA434B8221731 /* Pods_MusicProject.framework */,
 			);
 			name = Frameworks;
@@ -135,6 +168,7 @@
 				TargetAttributes = {
 					79E969A61DCE1E8300C67B8F = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,10 +258,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */,
 				79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */,
 				79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */,
+				79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */,
 				79F795191DE5476200C349D0 /* BrowseViewController.swift in Sources */,
+				79B40F261DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				79B40F2B1DEB9F1E00633EC6 /* LoginViewController.swift in Sources */,
 				793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,10 +389,13 @@
 			baseConfigurationReference = 2FADEE8C029DB50C8C5BDB96 /* Pods-MusicProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pearson.MusicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -363,10 +405,12 @@
 			baseConfigurationReference = 89E099F64AAC33BFD422AD3E /* Pods-MusicProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pearson.MusicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
