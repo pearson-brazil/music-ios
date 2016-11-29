@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2sR-eA-WJA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="05r-BY-pZL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -205,7 +205,7 @@
         <!--Login View Controller-->
         <scene sceneID="gi5-V7-MbK">
             <objects>
-                <viewController id="2sR-eA-WJA" customClass="LoginViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="2sR-eA-WJA" customClass="LoginViewController" customModule="MusicProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rbV-cj-3p5"/>
                         <viewControllerLayoutGuide type="bottom" id="i42-cp-4Gf"/>
@@ -360,11 +360,12 @@
                         <outlet property="loginButton" destination="DXm-dC-Z2C" id="heJ-wJ-kfV"/>
                         <outlet property="passwordTextField" destination="zb1-uU-iej" id="06t-8V-J6Q"/>
                         <outlet property="registerButton" destination="w2J-wY-bl1" id="m0X-Zg-lR9"/>
+                        <segue destination="05r-BY-pZL" kind="presentation" identifier="ShowHomeScreenSegue" id="Awz-tU-gel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-3v-6tT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="-188.45577211394306"/>
+            <point key="canvasLocation" x="586" y="-1867"/>
         </scene>
         <!--Navegar-->
         <scene sceneID="Pig-63-Yc7">

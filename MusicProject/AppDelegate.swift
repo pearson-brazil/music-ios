@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        if FIRAuth.auth()?.currentUser == nil {
+            window?.rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
+        }
+        
         return true
     }
 
