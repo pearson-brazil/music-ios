@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if FIRAuth.auth()?.currentUser == nil {
             window?.rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
         }
+
+        
         
         return true
     }
@@ -51,4 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
+
+
+
+
+
+
 
