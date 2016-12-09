@@ -384,7 +384,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="BlM-lI-xSr">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-Ye-M9V">
+                                <rect key="frame" x="169.5" y="315" width="37" height="37"/>
+                                <color key="color" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="BlM-lI-xSr">
                                 <rect key="frame" x="0.0" y="64" width="375" height="484"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
@@ -439,7 +443,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doo Wacka Doo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kd-t9-6Gf">
-                                        <rect key="frame" x="52" y="20" width="261" height="20.5"/>
+                                        <rect key="frame" x="52" y="20" width="261" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -503,11 +507,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JIK-Ye-M9V" firstAttribute="centerY" secondItem="e82-kX-TLw" secondAttribute="centerY" id="BnT-Fx-dAA"/>
                             <constraint firstItem="BlM-lI-xSr" firstAttribute="leading" secondItem="e82-kX-TLw" secondAttribute="leading" id="GCI-ok-sth"/>
                             <constraint firstItem="Ujg-VQ-Ysw" firstAttribute="top" secondItem="0Kz-p4-Hzz" secondAttribute="bottom" id="YFM-ZS-5hQ"/>
                             <constraint firstItem="BlM-lI-xSr" firstAttribute="top" secondItem="His-4Z-PIy" secondAttribute="bottom" id="eyK-yj-eqA"/>
                             <constraint firstAttribute="trailing" secondItem="BlM-lI-xSr" secondAttribute="trailing" id="eyl-wR-O7v"/>
                             <constraint firstItem="0Kz-p4-Hzz" firstAttribute="top" secondItem="BlM-lI-xSr" secondAttribute="bottom" id="jj7-Qb-TBl"/>
+                            <constraint firstItem="JIK-Ye-M9V" firstAttribute="centerX" secondItem="e82-kX-TLw" secondAttribute="centerX" id="xHn-oX-2NY"/>
                             <constraint firstItem="0Kz-p4-Hzz" firstAttribute="leading" secondItem="e82-kX-TLw" secondAttribute="leading" id="ybg-rd-uBn"/>
                             <constraint firstAttribute="trailing" secondItem="0Kz-p4-Hzz" secondAttribute="trailing" id="zY8-g9-Eqm"/>
                         </constraints>
@@ -517,6 +523,7 @@
                         <outlet property="miniPlayerBottomConstraint" destination="YFM-ZS-5hQ" id="WSw-2t-JeD"/>
                         <outlet property="musicPlayingArtistLabel" destination="kzg-AW-Azo" id="M6y-je-M0s"/>
                         <outlet property="musicPlayingNameLabel" destination="0Kd-t9-6Gf" id="aPI-Fd-Ma1"/>
+                        <outlet property="tableView" destination="BlM-lI-xSr" id="7FU-BO-8Iv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUG-qn-1bu" userLabel="First Responder" sceneMemberID="firstResponder"/>

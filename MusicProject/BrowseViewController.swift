@@ -7,45 +7,37 @@
 //
 
 import UIKit
-
-struct Music {
-    let name: String
-    let artist: String
-}
-
-struct Section {
-    let name: String
-    let musics: [Music]
-}
+import FirebaseDatabase
 
 class BrowseViewController: UIViewController {
 
-    
-    let items : [Section] = [
-        Section(name: "LANÇAMENTOS", musics: [
-            Music(name: "Musica 1", artist: "Artista 1"),
-            Music(name: "Musica 2", artist: "Artista 2"),
-            Music(name: "Musica 3", artist: "Artista 3"),
-            Music(name: "Musica 4", artist: "Artista 4")
-            ]),
-        Section(name: "TOP 10", musics: [
-            Music(name: "Musica 5", artist: "Artista 5"),
-            Music(name: "Musica 6", artist: "Artista 6"),
-            Music(name: "Musica 7", artist: "Artista 7"),
-            Music(name: "Musica 8", artist: "Artista 8"),
-            Music(name: "Musica 9", artist: "Artista 9")
-            ])
-    ]
+    var browseData : Browse?
     
     
     @IBOutlet weak var miniPlayerBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var musicPlayingNameLabel: UILabel!
     @IBOutlet weak var musicPlayingArtistLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     let bottomSpaceWhenHidden : CGFloat = -70.0
     let bottomSpaceWhenShowing : CGFloat = 0.0
     
     var selectedMusic: Music? = nil
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let ref = FIRDatabase.database().reference()
+        
+        self.tableView.isHidden = true
+        ref.child("navegar").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? JSONObject
+            self.browseData = Browse(from: value!)
+            self.tableView.reloadData()
+            self.tableView.isHidden = false
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
     
     func showMiniPlayer(withMusic music: Music) {
         
@@ -92,7 +84,7 @@ class BrowseViewController: UIViewController {
         }, completion: { (finished) in
             if finished {
                 self.musicPlayingNameLabel.text = music.name
-                self.musicPlayingArtistLabel.text = music.artist
+                self.musicPlayingArtistLabel.text = music.artistName
                 self.selectedMusic = music
                 
                 UIView.animate(withDuration: 0.15) {
@@ -119,19 +111,29 @@ extension BrowseViewController: UITableViewDelegate, UITableViewDataSource {
     // MARK: - Table view data source
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+        return 2
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items[section].musics.count
+        
+        if section == 0 {
+            return browseData?.releases.count ?? 0
+        }
+        return browseData?.top10.count ?? 0
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCellIdentifier", for: indexPath)
         
-        cell.textLabel?.text = items[indexPath.section].musics[indexPath.row].artist
-        cell.detailTextLabel?.text = items[indexPath.section].musics[indexPath.row].name
+        if indexPath.section == 0 {
+            cell.textLabel?.text = browseData?.releases[indexPath.row].artistName ?? ""
+            cell.detailTextLabel?.text = browseData?.releases[indexPath.row].name ?? ""
+            return cell
+        }
+        
+        cell.textLabel?.text = browseData?.top10[indexPath.row].artistName ?? ""
+        cell.detailTextLabel?.text = browseData?.top10[indexPath.row].name ?? ""
 
         return cell
     }
@@ -141,11 +143,18 @@ extension BrowseViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return items[section].name
+        if section == 0 {
+            return "LANÇAMENTOS"
+        }
+        return "TOP 10"
     }
  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showMiniPlayer(withMusic: items[indexPath.section].musics[indexPath.row])
+        if indexPath.section == 0 {
+            showMiniPlayer(withMusic: (browseData?.releases[indexPath.row])!)
+        }else{
+            showMiniPlayer(withMusic: (browseData?.top10[indexPath.row])!)
+        }
     }
 
 }
