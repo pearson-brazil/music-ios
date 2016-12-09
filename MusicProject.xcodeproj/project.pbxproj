@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */; };
 		794FCFB61DEAFD5B004A0459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */; };
+		798037881DFA389100AE3D58 /* ExpandCollapseButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */; };
+		7980378A1DFA38BD00AE3D58 /* ExpandCollapseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */; };
 		79B40F261DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */; };
 		79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F211DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m */; };
 		79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F231DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m */; };
@@ -28,6 +30,8 @@
 		2FADEE8C029DB50C8C5BDB96 /* Pods-MusicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicProject/Pods-MusicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandCollapseButton.xib; sourceTree = "<group>"; };
+		798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapseButton.swift; sourceTree = "<group>"; };
 		79B40F1D1DEB9DA600633EC6 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		79B40F1E1DEB9DB100633EC6 /* MusicProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
 				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
 				79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */,
+				798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */,
+				798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */,
 			);
 			path = MusicProject;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				794FCFB61DEAFD5B004A0459 /* GoogleService-Info.plist in Resources */,
 				79E969B21DCE1E8300C67B8F /* Assets.xcassets in Resources */,
 				79E969B01DCE1E8300C67B8F /* Main.storyboard in Resources */,
+				798037881DFA389100AE3D58 /* ExpandCollapseButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 				79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */,
 				79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */,
+				7980378A1DFA38BD00AE3D58 /* ExpandCollapseButton.swift in Sources */,
 				79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */,
 				79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */,
