@@ -21,8 +21,9 @@
                 <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
                     <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isPointingToDown" value="YES"/>
             </userDefinedRuntimeAttributes>
-            <point key="canvasLocation" x="86" y="150.5"/>
+            <point key="canvasLocation" x="-435" y="-91"/>
         </view>
     </objects>
 </document>

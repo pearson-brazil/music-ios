@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Kingfisher
 
 class BrowseViewController: UIViewController {
 
@@ -124,16 +125,24 @@ extension BrowseViewController: UITableViewDelegate, UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCellIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCellIdentifier", for: indexPath) as! BrowseTableViewCell
         
         if indexPath.section == 0 {
-            cell.textLabel?.text = browseData?.releases[indexPath.row].artistName ?? ""
-            cell.detailTextLabel?.text = browseData?.releases[indexPath.row].name ?? ""
-            return cell
+            cell.artistLabel?.text = browseData?.releases[indexPath.row].artistName ?? ""
+            cell.musicNameLabel?.text = browseData?.releases[indexPath.row].name ?? ""
+            
+            let url = URL(string: (browseData?.releases[indexPath.row].imageURL)!)
+            cell.musicImageView?.kf.setImage(with: url)
+        }else{
+            cell.artistLabel?.text = browseData?.top10[indexPath.row].artistName ?? ""
+            cell.musicNameLabel?.text = browseData?.top10[indexPath.row].name ?? ""
+            
+            let url = URL(string: (browseData?.top10[indexPath.row].imageURL)!)
+            cell.musicImageView?.kf.setImage(with: url)
         }
         
-        cell.textLabel?.text = browseData?.top10[indexPath.row].artistName ?? ""
-        cell.detailTextLabel?.text = browseData?.top10[indexPath.row].name ?? ""
+        
+
 
         return cell
     }

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7900570E1E1C92980055B692 /* ExpandCollapseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900570D1E1C92980055B692 /* ExpandCollapseButton.swift */; };
 		793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */; };
 		794FCFB61DEAFD5B004A0459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */; };
 		798037881DFA389100AE3D58 /* ExpandCollapseButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */; };
-		7980378A1DFA38BD00AE3D58 /* ExpandCollapseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */; };
-		7980378F1DFB711C00AE3D58 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980378E1DFB711C00AE3D58 /* Models.swift */; };
+		798037911DFB7C8600AE3D58 /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798037901DFB7C8600AE3D58 /* BrowseTableViewCell.swift */; };
 		79B40F261DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */; };
 		79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F211DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m */; };
 		79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F231DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m */; };
 		79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F251DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		79B40F2B1DEB9F1E00633EC6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */; };
+		79BB6DB51E1CA91600000098 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB6DB41E1CA91600000098 /* Models.swift */; };
 		79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */; };
 		79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E969AA1DCE1E8300C67B8F /* AppDelegate.swift */; };
 		79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */; };
@@ -29,11 +30,11 @@
 
 /* Begin PBXFileReference section */
 		2FADEE8C029DB50C8C5BDB96 /* Pods-MusicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicProject/Pods-MusicProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7900570D1E1C92980055B692 /* ExpandCollapseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapseButton.swift; sourceTree = "<group>"; };
 		793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandCollapseButton.xib; sourceTree = "<group>"; };
-		798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapseButton.swift; sourceTree = "<group>"; };
-		7980378E1DFB711C00AE3D58 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		798037901DFB7C8600AE3D58 /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
 		79B40F1D1DEB9DA600633EC6 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		79B40F1E1DEB9DB100633EC6 /* MusicProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		79B40F1F1DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		79B40F241DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		79B40F251DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		79BB6DB41E1CA91600000098 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79E969A71DCE1E8300C67B8F /* MusicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E969AA1DCE1E8300C67B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				79F795181DE5476200C349D0 /* BrowseViewController.swift */,
 				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
 				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
+				798037901DFB7C8600AE3D58 /* BrowseTableViewCell.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -95,17 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */,
-				798037891DFA38BD00AE3D58 /* ExpandCollapseButton.swift */,
+				7900570D1E1C92980055B692 /* ExpandCollapseButton.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		7980378D1DFB70F200AE3D58 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7980378E1DFB711C00AE3D58 /* Models.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		79B40F0F1DEB9D6C00633EC6 /* TPKeyboardAvoiding */ = {
@@ -122,6 +117,14 @@
 				79B40F1E1DEB9DB100633EC6 /* MusicProject-Bridging-Header.h */,
 			);
 			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		79BB6DB31E1CA90700000098 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79BB6DB41E1CA91600000098 /* Models.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		79E9699E1DCE1E8300C67B8F = {
@@ -145,7 +148,7 @@
 		79E969A91DCE1E8300C67B8F /* MusicProject */ = {
 			isa = PBXGroup;
 			children = (
-				7980378D1DFB70F200AE3D58 /* Models */,
+				79BB6DB31E1CA90700000098 /* Models */,
 				7980378C1DFB70E300AE3D58 /* Views */,
 				7980378B1DFB70B500AE3D58 /* Scenes */,
 				79E969B11DCE1E8300C67B8F /* Assets.xcassets */,
@@ -292,17 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798037911DFB7C8600AE3D58 /* BrowseTableViewCell.swift in Sources */,
+				79BB6DB51E1CA91600000098 /* Models.swift in Sources */,
 				79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */,
 				79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */,
-				7980378F1DFB711C00AE3D58 /* Models.swift in Sources */,
-				7980378A1DFA38BD00AE3D58 /* ExpandCollapseButton.swift in Sources */,
 				79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */,
 				79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				79E969AB1DCE1E8300C67B8F /* AppDelegate.swift in Sources */,
 				79F795191DE5476200C349D0 /* BrowseViewController.swift in Sources */,
 				79B40F261DEB9DB100633EC6 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				79B40F2B1DEB9F1E00633EC6 /* LoginViewController.swift in Sources */,
+				7900570E1E1C92980055B692 /* ExpandCollapseButton.swift in Sources */,
 				793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
