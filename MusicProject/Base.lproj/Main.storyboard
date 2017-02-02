@@ -537,9 +537,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Navegar" id="BjA-1n-kP8"/>
                     <connections>
+                        <outlet property="barView" destination="L2t-Ol-ZBA" id="zMT-uk-ejd"/>
                         <outlet property="miniPlayerBottomConstraint" destination="YFM-ZS-5hQ" id="WSw-2t-JeD"/>
                         <outlet property="musicPlayingArtistLabel" destination="kzg-AW-Azo" id="M6y-je-M0s"/>
                         <outlet property="musicPlayingNameLabel" destination="0Kd-t9-6Gf" id="aPI-Fd-Ma1"/>
+                        <outlet property="progressBarViewTrailingConstraint" destination="fbZ-ko-Hsy" id="8X0-rp-JUT"/>
                         <outlet property="tableView" destination="BlM-lI-xSr" id="7FU-BO-8Iv"/>
                     </connections>
                 </viewController>
@@ -567,11 +569,11 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fAF-Df-Xna" id="gdq-P9-UT7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bWh-rW-DFH">
-                                                    <rect key="frame" x="73" y="0.0" width="267" height="69"/>
+                                                    <rect key="frame" x="73" y="0.0" width="267" height="69.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

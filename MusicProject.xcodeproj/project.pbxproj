@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7900570E1E1C92980055B692 /* ExpandCollapseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900570D1E1C92980055B692 /* ExpandCollapseButton.swift */; };
+		791D40F21E1DC547008CC0AD /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D40F11E1DC547008CC0AD /* MusicPlayer.swift */; };
 		793ACFF91DE6A4C5004C4004 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */; };
 		794FCFB61DEAFD5B004A0459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */; };
 		798037881DFA389100AE3D58 /* ExpandCollapseButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		2FADEE8C029DB50C8C5BDB96 /* Pods-MusicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicProject/Pods-MusicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		7900570D1E1C92980055B692 /* ExpandCollapseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapseButton.swift; sourceTree = "<group>"; };
+		791D40F11E1DC547008CC0AD /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		798037871DFA389100AE3D58 /* ExpandCollapseButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandCollapseButton.xib; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
 				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
 				798037901DFB7C8600AE3D58 /* BrowseTableViewCell.swift */,
+				791D40F11E1DC547008CC0AD /* MusicPlayer.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				79BB6DB51E1CA91600000098 /* Models.swift in Sources */,
 				79B40F271DEB9DB100633EC6 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				79B40F281DEB9DB100633EC6 /* TPKeyboardAvoidingTableView.m in Sources */,
+				791D40F21E1DC547008CC0AD /* MusicPlayer.swift in Sources */,
 				79DEF6E71DE50A0C007BD5C1 /* MainViewController.swift in Sources */,
 				79E969AD1DCE1E8300C67B8F /* MusicViewController.swift in Sources */,
 				79B40F291DEB9DB100633EC6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,

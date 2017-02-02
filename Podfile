@@ -8,6 +8,7 @@ target 'MusicProject' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'Kingfisher', '~> 3.0'
 
 end

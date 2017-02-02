@@ -22,7 +22,7 @@ struct Browse {
         }else{
             releases = [Music]()
         }
-        if let top10Array = json["lancamentos"] as? [JSONObject] {
+        if let top10Array = json["top_10"] as? [JSONObject] {
             top10 = top10Array.map { Music(from: $0) }
         }else{
             top10 = [Music]()

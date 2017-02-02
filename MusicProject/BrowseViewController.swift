@@ -20,12 +20,16 @@ class BrowseViewController: UIViewController {
     @IBOutlet weak var musicPlayingArtistLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var barView: UIView!
+    @IBOutlet weak var progressBarViewTrailingConstraint: NSLayoutConstraint!
+    
     let bottomSpaceWhenHidden : CGFloat = -70.0
     let bottomSpaceWhenShowing : CGFloat = 0.0
     
     var selectedMusic: Music? = nil
     
     override func viewWillAppear(_ animated: Bool) {
+        
         let ref = FIRDatabase.database().reference()
         
         self.tableView.isHidden = true
@@ -41,6 +45,8 @@ class BrowseViewController: UIViewController {
     }
     
     func showMiniPlayer(withMusic music: Music) {
+        
+        updateBars(currentTime: 0, duration: 0)
         
         let hideAnimation = {
             self.miniPlayerBottomConstraint.constant = self.bottomSpaceWhenHidden
@@ -76,6 +82,7 @@ class BrowseViewController: UIViewController {
     func hideMiniPlayer() {
         miniPlayerBottomConstraint.constant = self.bottomSpaceWhenHidden
         view.layoutIfNeeded()
+        MusicPlayer.shared.stopMusic()
     }
     
     func updateMiniPlayer(music: Music) {
@@ -100,10 +107,25 @@ class BrowseViewController: UIViewController {
     
     @IBAction func pauseButtonTouchUpInside(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            MusicPlayer.shared.pauseMusic()
+        }else {
+            MusicPlayer.shared.resumeMusic()
+        }
+    }
+    
+    func updateBars(currentTime: TimeInterval, duration: TimeInterval) {
+        
+        UIView.animate(withDuration: 1) {
+            self.progressBarViewTrailingConstraint.constant = (self.barView.bounds.width * CGFloat(duration - currentTime)) / CGFloat(duration == 0 ? 1 : duration )
+            self.view.layoutIfNeeded()
+        }
     }
     
     override func viewDidLoad() {
         hideMiniPlayer()
+        MusicPlayer.shared.delegate = self
     }
 }
 
@@ -161,9 +183,21 @@ extension BrowseViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             showMiniPlayer(withMusic: (browseData?.releases[indexPath.row])!)
+            MusicPlayer.shared.playMusic(music: (browseData?.releases[indexPath.row])!)
         }else{
             showMiniPlayer(withMusic: (browseData?.top10[indexPath.row])!)
+            MusicPlayer.shared.playMusic(music: (browseData?.top10[indexPath.row])!)
         }
     }
 
+}
+
+extension BrowseViewController: MusicPlayerDelegate {
+    func progressDidChange(currentTime: TimeInterval, duration: TimeInterval) {
+        updateBars(currentTime: currentTime, duration: duration)
+        
+        if currentTime == duration {
+            hideMiniPlayer()
+        }
+    }
 }
