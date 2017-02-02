@@ -72,6 +72,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		79596E6F1E42BE94008F1A4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		79596E701E42BEA2008F1A4D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				79E969AE1DCE1E8300C67B8F /* Main.storyboard */,
+				79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */,
+				79F795181DE5476200C349D0 /* BrowseViewController.swift */,
+				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
+				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
+				79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 		79B40F0F1DEB9D6C00633EC6 /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,17 +129,13 @@
 		79E969A91DCE1E8300C67B8F /* MusicProject */ = {
 			isa = PBXGroup;
 			children = (
+				79596E6F1E42BE94008F1A4D /* Views */,
+				79596E701E42BEA2008F1A4D /* Scenes */,
 				79E969B11DCE1E8300C67B8F /* Assets.xcassets */,
 				79E969AA1DCE1E8300C67B8F /* AppDelegate.swift */,
-				79E969AE1DCE1E8300C67B8F /* Main.storyboard */,
 				79E969B31DCE1E8300C67B8F /* LaunchScreen.storyboard */,
 				794FCFB51DEAFD5B004A0459 /* GoogleService-Info.plist */,
 				79E969B61DCE1E8300C67B8F /* Info.plist */,
-				79DEF6E61DE50A0C007BD5C1 /* MainViewController.swift */,
-				79F795181DE5476200C349D0 /* BrowseViewController.swift */,
-				793ACFF81DE6A4C5004C4004 /* ArtistViewController.swift */,
-				79E969AC1DCE1E8300C67B8F /* MusicViewController.swift */,
-				79B40F2A1DEB9F1E00633EC6 /* LoginViewController.swift */,
 			);
 			path = MusicProject;
 			sourceTree = "<group>";

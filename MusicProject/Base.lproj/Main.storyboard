@@ -148,17 +148,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="BWb-Ps-QSu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-Ei-2H5">
-                                <rect key="frame" x="16" y="28" width="63" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="ORl-Gf-DF5"/>
-                                    <constraint firstAttribute="height" constant="20" id="vdx-Vh-iBC"/>
-                                </constraints>
-                                <state key="normal" image="ic_back"/>
-                                <connections>
-                                    <action selector="backButtonTouchUpInside:" destination="b6X-LW-ndH" eventType="touchUpInside" id="Y8m-gw-GmU"/>
-                                </connections>
-                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-vG-kFi">
                                 <rect key="frame" x="-2" y="380" width="379" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -166,6 +155,22 @@
                                     <action selector="sliderValueChanged:" destination="b6X-LW-ndH" eventType="valueChanged" id="Cmf-lQ-nKD"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-8I-hY4" userLabel="Collapse Button" customClass="ExpandCollapseButton" customModule="MusicProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="20" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="5lb-S4-IHl"/>
+                                    <constraint firstAttribute="width" constant="20" id="ekP-me-f4q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPointingToDown" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButtonTouchUpInside:" destination="b6X-LW-ndH" eventType="touchUpInside" id="cp5-IR-vxM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -173,14 +178,14 @@
                             <constraint firstItem="BWb-Ps-QSu" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leading" id="2Gz-9N-FOF"/>
                             <constraint firstAttribute="trailing" secondItem="BWb-Ps-QSu" secondAttribute="trailing" id="3UB-bR-hPA"/>
                             <constraint firstItem="f7M-i1-UQy" firstAttribute="top" secondItem="CYD-Fh-b7G" secondAttribute="bottom" id="5Qe-X8-Mpr"/>
-                            <constraint firstItem="jcc-Ei-2H5" firstAttribute="top" secondItem="J8e-98-AH4" secondAttribute="bottom" constant="8" id="Fqy-WV-NLK"/>
                             <constraint firstItem="8BV-Ja-igW" firstAttribute="top" secondItem="Pdy-vG-kFi" secondAttribute="bottom" constant="257" id="HlV-cf-Xwp"/>
                             <constraint firstItem="8BV-Ja-igW" firstAttribute="top" secondItem="P87-Pd-Pcx" secondAttribute="bottom" id="NlA-r1-au2"/>
+                            <constraint firstItem="9J3-8I-hY4" firstAttribute="top" secondItem="J8e-98-AH4" secondAttribute="bottom" constant="16" id="O8H-ag-v6y"/>
                             <constraint firstAttribute="trailing" secondItem="P87-Pd-Pcx" secondAttribute="trailing" id="OtW-EP-rXO"/>
                             <constraint firstItem="P87-Pd-Pcx" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leading" id="R6e-s9-3Jt"/>
                             <constraint firstItem="CYD-Fh-b7G" firstAttribute="top" secondItem="oDb-6s-kEd" secondAttribute="top" id="Rvd-m8-rSh"/>
+                            <constraint firstItem="9J3-8I-hY4" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leadingMargin" id="S0V-BG-PH3"/>
                             <constraint firstItem="CYD-Fh-b7G" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leading" id="WnD-3x-DkL"/>
-                            <constraint firstItem="jcc-Ei-2H5" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leadingMargin" id="dbg-d7-jf2"/>
                             <constraint firstItem="P87-Pd-Pcx" firstAttribute="top" secondItem="CYD-Fh-b7G" secondAttribute="bottom" id="fep-8X-ZdM"/>
                             <constraint firstAttribute="trailing" secondItem="Pdy-vG-kFi" secondAttribute="trailing" id="ggw-gw-T5K"/>
                             <constraint firstItem="f7M-i1-UQy" firstAttribute="leading" secondItem="oDb-6s-kEd" secondAttribute="leading" id="n8x-EI-jOG"/>
@@ -434,15 +439,9 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doo Wacka Doo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kd-t9-6Gf">
-                                        <rect key="frame" x="16" y="20" width="297" height="20.5"/>
+                                        <rect key="frame" x="52" y="20" width="261" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Whiteman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-AW-Azo">
-                                        <rect key="frame" x="16" y="44" width="93" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-Ol-ZBA">
@@ -462,20 +461,43 @@
                                             <constraint firstAttribute="trailing" secondItem="gX6-h9-m4a" secondAttribute="trailing" constant="289" id="fbZ-ko-Hsy"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Whiteman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-AW-Azo">
+                                        <rect key="frame" x="52" y="44" width="93" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6C-DO-kPl" userLabel="Expand Button" customClass="ExpandCollapseButton" customModule="MusicProject" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="30" width="20" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="Sqt-2r-3F8"/>
+                                            <constraint firstAttribute="width" constant="20" id="XDa-kI-Wgr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="b6X-LW-ndH" kind="presentation" id="Quf-XY-pAj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="L2t-Ol-ZBA" firstAttribute="leading" secondItem="0Kz-p4-Hzz" secondAttribute="leading" id="0us-L9-esH"/>
+                                    <constraint firstItem="kzg-AW-Azo" firstAttribute="leading" secondItem="N6C-DO-kPl" secondAttribute="trailing" constant="16" id="Fib-EV-rKV"/>
                                     <constraint firstAttribute="trailing" secondItem="L2t-Ol-ZBA" secondAttribute="trailing" id="Pin-pU-ZWW"/>
-                                    <constraint firstItem="kzg-AW-Azo" firstAttribute="leading" secondItem="0Kz-p4-Hzz" secondAttribute="leading" constant="16" id="Rmt-Ol-jCJ"/>
+                                    <constraint firstItem="N6C-DO-kPl" firstAttribute="leading" secondItem="0Kz-p4-Hzz" secondAttribute="leading" constant="16" id="Qgu-Sq-W34"/>
                                     <constraint firstAttribute="height" constant="70" id="WUX-RT-p4s"/>
                                     <constraint firstItem="0Kd-t9-6Gf" firstAttribute="top" secondItem="0Kz-p4-Hzz" secondAttribute="top" constant="20" id="ZXS-8B-g2M"/>
-                                    <constraint firstItem="0Kd-t9-6Gf" firstAttribute="leading" secondItem="0Kz-p4-Hzz" secondAttribute="leading" constant="16" id="a5w-FQ-h3b"/>
                                     <constraint firstItem="L2t-Ol-ZBA" firstAttribute="top" secondItem="0Kz-p4-Hzz" secondAttribute="top" id="f3F-r4-Gpa"/>
                                     <constraint firstItem="YWG-DG-X36" firstAttribute="leading" secondItem="0Kd-t9-6Gf" secondAttribute="trailing" constant="16" id="jQb-d9-0tI"/>
                                     <constraint firstAttribute="bottom" secondItem="kzg-AW-Azo" secondAttribute="bottom" constant="10" id="oox-Wo-BE9"/>
                                     <constraint firstAttribute="trailing" secondItem="YWG-DG-X36" secondAttribute="trailing" constant="16" id="q8h-Iy-uiM"/>
+                                    <constraint firstItem="N6C-DO-kPl" firstAttribute="centerY" secondItem="0Kz-p4-Hzz" secondAttribute="centerY" id="t5i-qy-yge"/>
                                     <constraint firstItem="YWG-DG-X36" firstAttribute="centerY" secondItem="0Kz-p4-Hzz" secondAttribute="centerY" id="v6Y-UH-32R"/>
+                                    <constraint firstItem="kzg-AW-Azo" firstAttribute="leading" secondItem="0Kd-t9-6Gf" secondAttribute="leading" id="ykz-Us-ayG"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -643,7 +665,6 @@
         <image name="doo_wacka_doo_poster" width="281" height="371"/>
         <image name="headphones-407190_1920" width="960" height="640"/>
         <image name="ic_artist" width="25" height="25"/>
-        <image name="ic_back" width="125" height="42"/>
         <image name="ic_forward" width="126" height="132"/>
         <image name="ic_music" width="18" height="20"/>
         <image name="ic_pause" width="140" height="140"/>
